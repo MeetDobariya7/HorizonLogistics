@@ -1,0 +1,73 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #109395;
+}
+
+.form-box {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-user-info h2 {
+  font-size: 2em;
+  color: #000000;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+.foot {
+  position: absolute;
+  bottom: 0;/* Adjust the left position as needed */
+  z-index: 1;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .form-box {
+    padding: 10px;
+  }
+  .foot {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .form-box {
+    max-width: 100%;
+    margin: 10px;
+    box-shadow: none;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

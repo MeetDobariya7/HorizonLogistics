@@ -1,0 +1,148 @@
+/* test.css */
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background image 
+  body {
+    background-image: url('Logistics.jpg') no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }*/
+
+/* Center the form vertically and horizontally */
+
+/* Style the form container */
+.form-box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  max-width: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  padding: 20px;
+}
+
+/* Style the form header */
+.main-user-info h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+/* Style the input boxes and labels */
+.inputbox {
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 0 35px 0 5px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  height: 40px;
+  background: transparent;
+  font-size: 1em;
+  color: #fff;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputbox input:focus + label,
+.inputbox input:valid + label {
+  top: -5px;
+}
+
+/* Style the gender details */
+.gender-details-box {
+  margin-bottom: 20px;
+}
+
+.gender-title {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.gender-category label {
+  margin-right: 10px;
+  color: #fff;
+}
+
+/* Style the submit button */
+.form-submit-btn input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.form-submit-btn input[type="submit"]:hover {
+  background-color: #e6e6e6;
+}
+
+.foot {
+  position: absolute;
+  bottom: 0;/* Adjust the left position as needed */
+  z-index: 1;
+}
+/* Make the form responsive */
+@media screen and (max-width: 768px) {
+  .form-box {
+    width: 80%;
+  }
+  .foot {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-box {
+    width: 80%;
+  }
+  .foot {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .inputbox {
+    margin: 10px;
+  }
+  .form-box {
+    width: 70%;
+  }
+}

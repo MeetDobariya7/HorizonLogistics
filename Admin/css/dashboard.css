@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /*background-color: #dedcdc;*/
+  background-color: #109395;
+}
+.dash {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #fff5;
+
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: 0.8rem;
+
+}
+.scroll-div {
+  display: flex;
+  height: 275px;
+  overflow-y: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.cards {
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards .card {
+  width: 250px;
+  height: 150px;
+  background: #fff;
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: .3s;
+  border-radius: 6px;
+  
+}
+.card:hover {
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.content-2 {
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 6px;
+}
+.content-2 img {
+  height: 40px;
+  width: 40px;
+}
+
+.content-2 .recent-payments {
+  min-height: 50vh;
+  flex: 5;
+  background: white;
+  margin: 0 25px 25px 25px;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  transition: .3s;
+  border-radius: 6px;
+}
+.content-2 .recent-payments:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 15px 10px;
+  border-bottom: 2px solid #999;
+}
+
+.title h2{
+  color: #057777;
+}
+
+h1,
+h2 {
+  color: #057777;
+}
+
+h3 {
+  color: #4f4d4d;
+}
+
+table {
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+  color: #057777;
+}
+td {
+  text-align: left;
+  padding: 8px;
+  color: #4f4d4d;
+}
+.btn {
+  background: #057777;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+.btn:hover {
+  color: #057777;
+  background: white;
+  padding: 3px 8px;
+  border: 2px solid #057777;
+}
+
+.content-2 .new-students {
+  flex: 2;
+  background: white;
+  min-height: 50vh;
+  margin: 0 25px;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  transition: .3s;
+  border-radius: 6px;
+}
+
+.content-2 .new-students:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+}
+
+.content-2 .new-students table td:nth-child(1) img {
+  height: 40px;
+  width: 40px;
+}
+@media screen and (max-width: 536px) {
+  .cards {
+    justify-content: center;
+  }
+  
+  .card,
+  .recent-payments,
+  .new-students {
+    border-radius: 6px;
+  }
+
+  .content-2 .recent-payments table th:nth-child(2),
+  .container .content .content-2 .recent-payments table td:nth-child(2) {
+    display: none;
+  }
+}

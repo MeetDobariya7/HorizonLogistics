@@ -1,0 +1,105 @@
+.sidebar {
+    background-color: #333;
+    color: #ffffff;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    transition: left 0.5s ease-in-out;
+    overflow-y: auto;
+  }
+  
+  .sidebar a {
+    color: #ffffff;
+  }
+  
+  .sidebar a:hover {
+    color: #000000;
+  }
+  
+  .sidebar.active {
+    left: 0;
+  }
+  
+  .dropdown-menu {
+    background-color: #333;
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #333;
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+    text-decoration: underline;
+  }
+  
+  .content {
+    transition: margin-left 0.5s ease-in-out;
+    margin-left: 0px;
+  }
+  
+  .content.active {
+    margin-left: 250px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 0%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .adm a {
+    float: right;
+    display: block;
+    color: white;
+  }
+  
+  .adm a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar a.icon {
+      float: left;
+      display: block;
+    }
+  
+    .sidebar {
+      left: -150px;
+      width: 150px;
+    }
+  
+    .content.active {
+      margin-left: 149px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {
+      position: relative;
+    }
+  
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .navbar.responsive a {
+      float: left;
+      display: block;
+    }
+  }
